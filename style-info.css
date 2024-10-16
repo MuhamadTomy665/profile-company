@@ -1,0 +1,51 @@
+body {
+    background: rgb(21, 96, 182);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Removed the extra text */
+    margin: 30px;
+    align-items: center;
+    grid-gap: 10px;
+}
+
+img {
+    /* You can add styles for images here if needed */
+}
+
+.grid > article {
+    box-shadow: 10px 5px 5px 0px black;
+    border-radius: 30px;
+    text-align: center;
+    background: white;
+    transition: transform 0.2s ease-in-out; /* Combined transitions */
+}
+
+.grid > article img {
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 100px;
+}
+
+.konten {
+    /* You can add styles for the konten class here if needed */
+}
+
+.grid > article:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 100px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.gambar-3 .konten p {
+    color: black; /* Change to your desired color */
+}
+
+.gambar-3 .konten h2 {
+    color: black; /* Change to your desired color */
+}
